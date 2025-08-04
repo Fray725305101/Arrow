@@ -4,11 +4,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         String arrowRight = ">>-->";
         String arrowLeft = "<--<<";
+
+        Scanner scanner = new Scanner(System.in);
+        Comparing comparing = new Comparing();
+
         System.out.print("Enter your string with arrows: ");
         String inputString = scanner.nextLine();
 
+        int countRightArrows = comparing.countArrows(arrowRight, inputString);
+        int countLeftArrows = comparing.countArrows(arrowLeft, inputString);
+
+        System.out.println("Right Arrows: "+countRightArrows+", Left Arrows: "+countLeftArrows+", Sum: "+countRightArrows+countLeftArrows);
     }
 }
