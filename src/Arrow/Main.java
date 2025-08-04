@@ -21,7 +21,7 @@ public class Main {
             int sum = countRightArrows + countLeftArrows;
             System.out.println("Right Arrows: " + countRightArrows + ", Left Arrows: " + countLeftArrows + ", Sum: " + sum);
         } else {
-            System.out.println("По условию задачи строка должна содержать до 106 символам");
+            System.out.println("По условию задачи строка должна содержать до 106 символов");
         }
     }
 }
