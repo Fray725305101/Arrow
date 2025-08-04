@@ -10,13 +10,13 @@ public class Comparing {
         int idx = 0;
 
         //Считаем, что одна стрелка может быть частью другой стрелки
-        while (idx <= inputStringLength - arrowLenght) {
-            idx = inputString.indexOf(arrow, idx);
-            if (idx == -1) {
-                break;
+        while (idx <= inputStringLength - arrowLenght) { //Пока индекс меньше, чем длина строки стрелки
+            idx = inputString.indexOf(arrow, idx); //Ищем вхождение
+            if (idx == -1) {//Если вхождения нет
+                break; //Завершаем цикл
             }
-            count++;
-            idx += 1;
+            count++; //Добавляем единицу в счётчик вхождений
+            idx++; //Свдигаемся на 1 символ вправо
         }
 
         return count;

@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //Здесь всё понятно, комментировать нечего
+
         String arrowRight = ">>-->";
         String arrowLeft = "<--<<";
 
