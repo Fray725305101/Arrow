@@ -7,5 +7,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String arrowRight = ">>-->";
         String arrowLeft = "<--<<";
+        System.out.print("Enter your string with arrows: ");
+        String inputString = scanner.nextLine();
+
     }
 }
