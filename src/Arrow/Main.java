@@ -15,7 +15,8 @@ public class Main {
 
         int countRightArrows = comparing.countArrows(arrowRight, inputString);
         int countLeftArrows = comparing.countArrows(arrowLeft, inputString);
+        int sum = countRightArrows+countLeftArrows;
 
-        System.out.println("Right Arrows: "+countRightArrows+", Left Arrows: "+countLeftArrows+", Sum: "+countRightArrows+countLeftArrows);
+        System.out.println("Right Arrows: "+countRightArrows+", Left Arrows: "+countLeftArrows+", Sum: "+sum);
     }
 }
