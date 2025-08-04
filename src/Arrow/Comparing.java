@@ -10,6 +10,7 @@ public class Comparing {
         int idx = 0;
 
         //Считаем, что одна стрелка может быть частью другой стрелки
+
         while (idx <= inputStringLength - arrowLenght) { //Пока индекс меньше, чем длина строки стрелки
             idx = inputString.indexOf(arrow, idx); //Ищем вхождение
             if (idx == -1) {//Если вхождения нет

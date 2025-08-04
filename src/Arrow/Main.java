@@ -15,10 +15,13 @@ public class Main {
         System.out.print("Enter your string with arrows: ");
         String inputString = scanner.nextLine();
 
-        int countRightArrows = comparing.countArrows(arrowRight, inputString);
-        int countLeftArrows = comparing.countArrows(arrowLeft, inputString);
-        int sum = countRightArrows+countLeftArrows;
-
-        System.out.println("Right Arrows: "+countRightArrows+", Left Arrows: "+countLeftArrows+", Sum: "+sum);
+        if (inputString.length() <= 106) {
+            int countRightArrows = comparing.countArrows(arrowRight, inputString);
+            int countLeftArrows = comparing.countArrows(arrowLeft, inputString);
+            int sum = countRightArrows + countLeftArrows;
+            System.out.println("Right Arrows: " + countRightArrows + ", Left Arrows: " + countLeftArrows + ", Sum: " + sum);
+        } else {
+            System.out.println("По условию задачи строка должна содержать до 106 символам");
+        }
     }
 }
